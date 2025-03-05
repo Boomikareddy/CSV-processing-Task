@@ -1,43 +1,40 @@
-# 📂 CSV Processing Django Project
+📂 CSV Processing with Django, Celery & Redis
+This project enables users to upload CSV files, process them asynchronously using Celery and Redis, and display the processed results dynamically on the frontend.
 
-This project allows users to **upload CSV files**, process them **asynchronously using Celery and Redis**, and view the processed results dynamically.
+🚀 Features
+✔️ Upload and manage CSV files via a user-friendly interface
+✔️ Process data asynchronously using Celery and Redis for efficiency
+✔️ Compute sum, average, and count for numerical columns
+✔️ Display results dynamically on the frontend
 
----
+🔧 Installation & Setup
 
-## 🚀 **Project Features**
-✅ Upload CSV files from the frontend  
-✅ Process CSV data asynchronously using **Celery & Redis**  
-✅ Perform **sum, average, and count** calculations on the uploaded data  
-✅ Display real-time results dynamically on the frontend  
+1️⃣ Clone the Repository
+git clone https://github.com/Boomikareddy/csv-processing-django-main.git
+cd csv-processing-django-main
 
----
-
-## 🔧 **Setup Instructions**
-
-### 1️⃣ Clone the Repository  
-```bash
-git clone https://github.com/Pavithra342/csv-processing-django.git
-
-cd csv-processing-django
-
-2️⃣Create and Activate a Virtual Environment
+2️⃣ Set Up a Virtual Environment
 python -m venv venv
-source venv/bin/activate  # For Mac/Linux
-venv\Scripts\activate     # For Windows
+# Activate the virtual environment:
+# On Windows:
+venv\Scripts\activate
+# On macOS/Linux:
+source venv/bin/activate
 
 3️⃣ Install Dependencies
 pip install -r requirements.txt
 
-4️⃣ Run Database Migrations
+4️⃣ Apply Database Migrations
 python manage.py migrate
 
 5️⃣ Start Redis Server
-redis-server  # For Mac/Linux
+redis-server  # (For macOS/Linux)
+For Windows, install Redis separately and run it from the installed path.
 
-6️⃣ Start Celery Worker
+6️⃣ Start the Celery Worker
 celery -A csv_project worker --loglevel=info
 
-7️⃣ Run Django Development Server
+7️⃣ Run the Django Development Server
 python manage.py runserver
 
 🛠 Technologies Used
