@@ -54,6 +54,14 @@ celery -A csv_project worker --loglevel=info
 
 python manage.py runserver
 
+🎯 Now Try Accessing:
+
+Admin Panel: http://127.0.0.1:8000/admin/
+
+CSV App: http://127.0.0.1:8000/csv/
+
+New Homepage: http://127.0.0.1:8000/ (It should display "Welcome to the CSV Processing App!")
+
 🛠 Technologies Used
 Django – Backend framework
 Celery – Asynchronous task processing
