@@ -1,7 +1,10 @@
 📂 CSV Processing with Django, Celery & Redis
+
+
 This project enables users to upload CSV files, process them asynchronously using Celery and Redis, and display the processed results dynamically on the frontend.
 
 🚀 Features
+
 ✔️ Upload and manage CSV files via a user-friendly interface
 ✔️ Process data asynchronously using Celery and Redis for efficiency
 ✔️ Compute sum, average, and count for numerical columns
